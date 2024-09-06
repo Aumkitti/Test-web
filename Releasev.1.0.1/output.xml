@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-06T15:17:55.270364" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase" source="D:\Users\msi\Desktop\Testbot\Releasev.1.0.1\Testcase.robot">
+<test id="s1-t1" name="TC4003: กรณีกรอกข้อมูลไม่ครบ" line="85">
+<kw name="Open Edge" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:17:55.743124" level="INFO">Opening browser 'Edge' to base url 'http://localhost:5173/'.</msg>
+<arg>${WEB_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-06T15:17:55.743124" elapsed="3.111036"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:17:55.742225" elapsed="3.112869"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T15:17:59.857157" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T15:17:58.856095" elapsed="1.001062"/>
+</kw>
+<kw name="Loginbutton" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:17:59.858848" level="INFO">Clicking element 'id=signin-button'.</msg>
+<arg>id=signin-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T15:17:59.857839" elapsed="0.069398"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:17:59.857839" elapsed="0.069398"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T15:18:00.928530" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T15:17:59.928238" elapsed="1.000292"/>
+</kw>
+<kw name="Input Username And Password" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:00.930535" level="INFO">Typing text 'course' into text field 'id=input-username'.</msg>
+<arg>id=input-username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T15:18:00.929559" elapsed="0.084865"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:01.014424" level="INFO">Typing text 'course' into text field 'id=input-password'.</msg>
+<arg>id=input-password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T15:18:01.014424" elapsed="0.081014"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:18:00.929559" elapsed="0.165879"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T15:18:02.096762" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T15:18:01.096444" elapsed="1.000318"/>
+</kw>
+<kw name="Click Login Button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:02.098774" level="INFO">Clicking element 'id=submit-login'.</msg>
+<arg>id=submit-login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T15:18:02.097770" elapsed="0.061524"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:18:02.097770" elapsed="0.061524"/>
+</kw>
+<kw name="Wait For Course Addition Section" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=add-major-text</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-06T15:18:02.161308" elapsed="2.938831"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:05.118141" level="INFO">Current page contains text 'เพิ่มหลักสูตร'.</msg>
+<arg>เพิ่มหลักสูตร</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-06T15:18:05.100139" elapsed="0.018002"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:18:02.160306" elapsed="2.957835"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T15:18:06.119629" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T15:18:05.119143" elapsed="1.000486"/>
+</kw>
+<kw name="Click Add Course Section" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:06.120613" level="INFO">Clicking element 'id=add-major-button'.</msg>
+<arg>id=add-major-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T15:18:06.120613" elapsed="0.069018"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:18:06.119629" elapsed="0.070002"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T15:18:07.191265" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T15:18:06.190629" elapsed="1.000636"/>
+</kw>
+<kw name="Fill Course is not complete" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:07.192269" level="INFO">Typing text 'วิทยาการคอมพิวเตอร์' into text field 'id=input-majornameth'.</msg>
+<arg>id=input-majornameth</arg>
+<arg>${thai_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T15:18:07.192269" elapsed="0.133028"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:07.326298" level="INFO">Typing text 'Computer Science' into text field 'id=input-majornameeng'.</msg>
+<arg>id=input-majornameeng</arg>
+<arg>${eng_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T15:18:07.325297" elapsed="0.101022"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:18:07.191265" elapsed="0.235054"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T15:18:08.427734" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T15:18:07.427320" elapsed="1.000414"/>
+</kw>
+<kw name="Click Save Course Button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:08.428735" level="INFO">Clicking element 'id=savebutton'.</msg>
+<arg>id=savebutton</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T15:18:08.428735" elapsed="0.072016"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:18:08.427734" elapsed="0.073017"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T15:18:09.502030" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T15:18:08.501750" elapsed="1.000280"/>
+</kw>
+<kw name="Wait For Error fill" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${alert}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-06T15:18:09.503054" elapsed="0.012793"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:09.534850" level="INFO">Current page contains text 'กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน'.</msg>
+<arg>กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-06T15:18:09.516846" elapsed="0.018004"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:18:09.503054" elapsed="0.031796"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T15:18:10.538307" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T15:18:09.536853" elapsed="1.001454"/>
+</kw>
+<kw name="Capture Screenshot" owner="keywords">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-06T15:18:10.666596" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-06T15:18:10.539302" elapsed="0.127294"/>
+</kw>
+<status status="PASS" start="2024-09-06T15:18:10.539302" elapsed="0.127294"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-06T15:18:10.667596" elapsed="2.304082"/>
+</kw>
+<doc>การเพิ่มหลักสูตรโดยตัวแทนหลักสูตรกรณีกรอกข้อมูลไม่ครบ</doc>
+<tag>errorfill</tag>
+<status status="PASS" start="2024-09-06T15:17:55.739945" elapsed="17.232541"/>
+</test>
+<status status="PASS" start="2024-09-06T15:17:55.273367" elapsed="17.700132"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">errorfill</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

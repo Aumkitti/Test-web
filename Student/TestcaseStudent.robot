@@ -5,7 +5,7 @@ Library    OperatingSystem
 Library    DateTime
 
 *** Test Cases ***
-TC6001
+TC11001
     [Tags]    fillgrade
     [Documentation]    การกรอกผลการเรียน
     Create Timestamp
@@ -42,7 +42,7 @@ TC6001
     Sleep    1s
     Save Screenshot on Success
 
-TC6002
+TC11002
     [Tags]    Editfillgrade
     [Documentation]    การกรอกผลการเรียนกรณีแก้ไข
     Create Timestamp
@@ -79,7 +79,7 @@ TC6002
     Sleep    1s
     Save Screenshot on Success
 
-TC6003
+TC11003
     [Tags]    Freesubject
     [Documentation]    การกรอกผลการเรียนกรณีเปลี่ยนให้เป็นวิชาเสรี
     Create Timestamp

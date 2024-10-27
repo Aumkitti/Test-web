@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-10-27T19:12:16.226549" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcaseadvisor" source="D:\Users\msi\Desktop\Testbot\Releasev.1.0.3\Testcaseadvisor.robot">
+<test id="s1-t1" name="TC6004" line="131">
+<kw name="Create Timestamp" owner="keywords">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-10-27T19:12:16.767450" level="INFO">${timestamp} = 20241027_191216</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-10-27T19:12:16.767450" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-10-27T19:12:16.767450" level="INFO">${timestamp} = 20241027_191216</msg>
+<arg>${timestamp}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-10-27T19:12:16.767450" elapsed="0.000999"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-10-27T19:12:16.769449" level="INFO">${SCREENSHOT_FOLDER} = Screenshots/20241027_191216</msg>
+<var>${SCREENSHOT_FOLDER}</var>
+<arg>${FOLDER_NAME}/${timestamp}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-10-27T19:12:16.768449" elapsed="0.001000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-10-27T19:12:16.770449" level="INFO">${SCREENSHOT_FOLDER} = Screenshots/20241027_191216</msg>
+<arg>${SCREENSHOT_FOLDER}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-10-27T19:12:16.769449" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:16.766455" elapsed="0.003994"/>
+</kw>
+<kw name="Open Edge" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:16.772450" level="INFO">Opening browser 'Edge' to base url 'http://localhost:5173/'.</msg>
+<arg>${WEB_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-27T19:12:16.772450" elapsed="3.857824"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:16.771451" elapsed="3.858823"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:21.631716" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:20.631275" elapsed="1.000441"/>
+</kw>
+<kw name="Loginbutton" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:21.632717" level="INFO">Clicking element 'id=signin-button'.</msg>
+<arg>id=signin-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:21.632717" elapsed="0.092000"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:21.631716" elapsed="0.094001"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:22.726343" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:21.725717" elapsed="1.000626"/>
+</kw>
+<kw name="Input Username And Password" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:22.728344" level="INFO">Typing text 'advisor' into text field 'id=input-username'.</msg>
+<arg>id=input-username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:22.728344" elapsed="0.118833"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:22.847177" level="INFO">Typing text 'advisor' into text field 'id=input-password'.</msg>
+<arg>id=input-password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:22.847177" elapsed="0.132169"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:22.727342" elapsed="0.252004"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:23.980620" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:22.980347" elapsed="1.000642"/>
+</kw>
+<kw name="Click Login Button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:23.981607" level="INFO">Clicking element 'id=submit-login'.</msg>
+<arg>id=submit-login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:23.981607" elapsed="0.118089"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:23.981607" elapsed="0.119088"/>
+</kw>
+<kw name="Wait For Text addstudent" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=addstudent-Text</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-27T19:12:24.101693" elapsed="4.904943"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:29.050646" level="INFO">Current page contains text 'เพิ่มนักศึกษา'.</msg>
+<arg>เพิ่มนักศึกษา</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-10-27T19:12:29.007639" elapsed="0.043007"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:24.101693" elapsed="4.948953"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:30.055798" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:29.055650" elapsed="1.000148"/>
+</kw>
+<kw name="Click addstudent button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:30.056880" level="INFO">Clicking element 'id=add-student-button'.</msg>
+<arg>id=add-student-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:30.056880" elapsed="0.106815"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:30.055798" elapsed="0.108895"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:31.165895" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:30.165699" elapsed="1.000196"/>
+</kw>
+<kw name="Input titlename" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:31.166768" level="INFO">Typing text 'นาย' into text field 'id=input-titlename'.</msg>
+<arg>id=input-titlename</arg>
+<arg>${Titlename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:31.166768" elapsed="0.141904"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:31.165895" elapsed="0.142777"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:32.309959" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:31.309667" elapsed="1.000292"/>
+</kw>
+<kw name="Input firstname" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:32.311958" level="INFO">Typing text 'กิตติชัย' into text field 'id=input-firstname'.</msg>
+<arg>id=input-firstname</arg>
+<arg>${Firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:32.310949" elapsed="0.177657"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:32.310949" elapsed="0.177657"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:33.491671" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:32.489603" elapsed="1.002068"/>
+</kw>
+<kw name="Input lastname" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:33.493669" level="INFO">Typing text 'เดชจิต' into text field 'id=input-lastname'.</msg>
+<arg>id=input-lastname</arg>
+<arg>${Lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:33.493669" elapsed="0.152373"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:33.492660" elapsed="0.153382"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:34.648074" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:33.646575" elapsed="1.001499"/>
+</kw>
+<kw name="Input studentid Repeat" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:34.649066" level="INFO">Typing text '644259049' into text field 'id=input-studentid'.</msg>
+<arg>id=input-studentid</arg>
+<arg>${Studentidrepeat}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:34.648074" elapsed="0.165215"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:34.648074" elapsed="0.166215"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:35.817017" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:34.816289" elapsed="1.000728"/>
+</kw>
+<kw name="Click dropdown room" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:35.817998" level="INFO">Clicking element 'id=section'.</msg>
+<arg>id=section</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:35.817998" elapsed="0.111198"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:35.817017" elapsed="0.112179"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:36.930762" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:35.930194" elapsed="1.000568"/>
+</kw>
+<kw name="Click option room" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:36.931765" level="INFO">Clicking element 'id=room-name'.</msg>
+<arg>id=room-name</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:36.931765" elapsed="0.068019"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:36.931765" elapsed="0.068019"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-27T19:12:38.001294" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-27T19:12:37.000778" elapsed="1.000516"/>
+</kw>
+<kw name="Input Password" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:38.004298" level="INFO">Typing text '644259000' into text field 'id=input-studentpassword'.</msg>
+<arg>id=input-studentpassword</arg>
+<arg>${StudentPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:38.004298" elapsed="0.334418"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:38.003302" elapsed="0.336416"/>
+</kw>
+<kw name="Input confirmPassword" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:38.342719" level="INFO">Typing text '644259000' into text field 'id=input-confirmPassword'.</msg>
+<arg>id=input-confirmPassword</arg>
+<arg>${StudentPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:38.341716" elapsed="0.280278"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:38.340713" elapsed="0.281281"/>
+</kw>
+<kw name="Click Submit button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:38.623992" level="INFO">Clicking element 'id=save-student'.</msg>
+<arg>id=save-student</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-27T19:12:38.623992" elapsed="0.126029"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:38.622996" elapsed="0.128028"/>
+</kw>
+<kw name="Wait For error Modal" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[@id="my_modal"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-27T19:12:38.754023" elapsed="1.340969"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>//*[@id="alertmodal"]</arg>
+<arg>โปรดกรอกข้อมูลให้ครบถ้วน</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-10-27T19:12:40.094992" elapsed="0.058130"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:38.753024" elapsed="1.401098"/>
+</kw>
+<kw name="Save Screenshot on Success" owner="keywords">
+<kw name="Take Screenshot" owner="keywords">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-27T19:12:40.365833" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/20241027_191216/success_20241027_191216.png"&gt;&lt;img src="Screenshots/20241027_191216/success_20241027_191216.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_FOLDER}/${screenshot_name}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-27T19:12:40.158126" elapsed="0.207707"/>
+</kw>
+<arg>success_${timestamp}</arg>
+<status status="PASS" start="2024-10-27T19:12:40.157123" elapsed="0.208710"/>
+</kw>
+<status status="PASS" start="2024-10-27T19:12:40.155122" elapsed="0.210711"/>
+</kw>
+<doc>เพิ่มนักศึกษากรีณีกรอกข้อมูลสำคัญไม่ครบ</doc>
+<tag>addstudenterror</tag>
+<status status="PASS" start="2024-10-27T19:12:16.764456" elapsed="23.602378"/>
+</test>
+<status status="PASS" start="2024-10-27T19:12:16.230550" elapsed="24.138288"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">addstudenterror</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcaseadvisor">Testcaseadvisor</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
